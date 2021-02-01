@@ -65,6 +65,12 @@ class STACK(DATA_STRUCT):
         self.end_pointer = self.end_pointer % self.max_size
         return item
 
+    def push(self, item):
+        self.enqueue(item)
+
+    def pop(self):
+        self.dequeue()
+
 
 q = QUEUE(5, "queue")
 print(q.name)
@@ -81,13 +87,13 @@ print("")
 
 s = STACK(5, "stack")
 print(s.name)
-s.enqueue("one")
-s.enqueue("two")
-s.enqueue("three")
-s.enqueue("four")
-s.enqueue("five")
+s.push("one")
+s.push("two")
+s.push("three")
+s.push("four")
+s.push("five")
 s.show_list()
 print("")
-s.dequeue()
+s.pop()
 s.show_list()
 print("")
