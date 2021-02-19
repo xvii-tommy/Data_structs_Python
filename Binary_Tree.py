@@ -21,6 +21,15 @@ class Binary_Tree:
             else:
                 printval = self.root.right
 
+        def addval(value):
+            pass
+
+        def dfsearch(value):
+            pass
+
+        def bfsearch(value):
+            pass
+
 
 bt = Binary_Tree()
 bt.root = Node(10)
